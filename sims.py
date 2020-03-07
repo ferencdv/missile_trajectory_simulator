@@ -1,6 +1,9 @@
 """The numerical simulation. Basic text interface provided when run as main. Real interface in gui.pyw"""
 
 from math import *
+global VBO
+global calcrange
+global burnout_angle
 
 class Simulation(object):
     """The numerical simulation"""
@@ -66,8 +69,21 @@ class Simulation(object):
         
         area_missile = (self.missilediam/2)**2 * pi #[m^2]
         area_rv = self.rvdiam/2**2 * pi #[m^2]
-        #####
-        
+        ##### CALCULATE THE BURNOUT VELOCITY
+        print self.numstages
+        if self.numstages == 1:
+           VBO = self.Isp0[1]*9.81*log(mtot/(mtot - self.fuelmass[1]))
+           print VBO
+        if self.numstages ==2:
+           VBO = self.Isp0[1]*9.81*log(mtot/(mtot - self.fuelmass[1]))
+           VBO = VBO + self.Isp0[2]*9.81*log((mtot-self.m0[1])/(mtot - self.m0[1] - self.fuelmass[2]))
+           print VBO
+        if self.numstages ==3:
+           VBO = self.Isp0[1]*9.81*log(mtot/(mtot - self.fuelmass[1]))
+           VBO = VBO + self.Isp0[2]*9.81*log((mtot-self.m0[1])/(mtot - self.m0[1] - self.fuelmass[2]))
+           VBO = VBO + self.Isp0[3]*9.81*log((mtot-self.m0[1]-self.m0[2])/(mtot - self.m0[1] - self.m0[2] - self.fuelmass[2]))
+           print VBO
+        # Now no need to estimate the range anymore and can remove est range button
         ##### INTEGRATE
         #   
         #Initialize variables
@@ -84,7 +100,13 @@ class Simulation(object):
         
         #set burnout angle to optimum for MET
         #uses Wheelon's form of the equations
-        opt_burnout_angle = pi/2 - .25*(self.est_range/Rearth + pi)
+        calcrange = exp((2500.*(VBO/1000.)+23629.)/4477.)
+        print 'calcrange=', calcrange 
+        opt_burnout_angle = pi/2 - .25*(1000*calcrange/Rearth + pi)
+        #if sim.trajectory == 'Burnout Angle':
+        #opt_burnout_angle = self.burnout_angle
+        print 'burnout angle',opt_burnout_angle*180/3.141592
+        #print 'burn out angle', burnout_angle
         #use this optimum burnout angle to linearize turn angle, from horizontal
 
         
@@ -178,12 +200,13 @@ class Simulation(object):
             #
             # calculate gamma
             
-            vertical_flight_period = 5
+            vertical_flight_period = 5 # seconds this is very arbitrary! REVISIT THIS
             if t < vertical_flight_period:
                 #force gamma to be constant early in flight
                 dgamma = 0.0
             elif (t >= vertical_flight_period) and (t <= burntimetot):
                 dgamma = ((opt_burnout_angle - pi/2)/(burntimetot - vertical_flight_period))
+                # Flying the missile at the burnout angle until end of burnout
             else:
                 dgamma = d_psi/(deltat/2) + Force*sin(ETA_old)/(v_old * m_old) - (g*cos(gamma_old)/v_old)
             
@@ -415,7 +438,8 @@ if __name__ == "__main__":
     sim.LdivD = float(raw_input("Nosecone: Length/Diam (dimensionless): ")) 
     sim.rvdiam = float(raw_input("Re-entry Diameter (m): "))
     sim.est_range = float(raw_input("Est range (km): "))*1000
-    
+    sim.burnout_angle = float(raw_input("Burnout Angle (deg): "))*1
+
     print '\n'
     sim.trajectory = "Minimum Energy"
     results = sim.integrate(sim.trajectory)
