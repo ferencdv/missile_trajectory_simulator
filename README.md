@@ -6,4 +6,4 @@ nuclear expert Dr. Dave Wright on which this code is based. You can find Josh's 
 code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page contains 
 all relevant information as to the licensing of this code.
 
-April 23 2020: Please use new files. 
+April 23 2020: Please use new files. gui-7-new.py which also requires the simss.py files.
