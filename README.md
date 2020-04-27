@@ -30,3 +30,5 @@ April 27 2020: There was a major bug in the original program in that when a new 
  This is added before the END OF BIG LOOP. This code redefines the mass at each stage to account for a loss of a stage. Note that this this code happens at the end of the stage integration.
 
 April 27 2020: The presets file has also been changed to add the Iranian Qasam missile with and without coasting. Coasting is included as an empty stage with zero thrust. Specifically if ISP=1, and Mass Fuel = 0.01 kg, then in the burn time is t seconds then the thrust = (MF/t) = 0.01/42 = 0.000238 kgf. Similarly if t = 200 s then thrust = MF/t = 0.01/200 = 0.00005 kgf.
+
+April 27 2020: Note that the uptodate files are: gui-11.py, presets.gui11.py, simss.py
