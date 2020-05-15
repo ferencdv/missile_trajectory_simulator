@@ -1025,7 +1025,7 @@ class AppFrame(wx.Frame):
         
         #load presets
         try:
-            preset_path = os.path.join(self.get_main_dir(),"presets.gui7.txt")
+            preset_path = os.path.join(self.get_main_dir(),"presets.514.txt")
             presets_file = open(preset_path,'r')
             presets = eval(presets_file.read())
         except SyntaxError:
