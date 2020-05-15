@@ -7,6 +7,7 @@ code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page c
 all relevant information as to the licensing of this code.
 
 ## Inclusion of Drag
+May 14
 
 Note that this is a fit of total drag which includes the body drag plus the fricton drag 
 and base drag. It does not include the fin drag. Note that this drag also does not include 
