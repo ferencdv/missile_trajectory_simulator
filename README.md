@@ -1,4 +1,4 @@
-### missile_trajectory_simulator
+# MISSILE TRAJECTORY SIMULATOR
 This code is directly taken from Josh Levinger's Missile Trajectory simulator code. 
 Modifications are by me only and will be to improve its utility for our applications. 
 All credit should go to Josh Levinger of GlobalSecurity.org and Union of Concerned Scientists 
@@ -6,7 +6,7 @@ nuclear expert Dr. Dave Wright on which this code is based. You can find Josh's 
 code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page contains 
 all relevant information as to the licensing of this code.
 
-## INCLUSION OF DRAG
+## Inclusion of Drag
 
 Note that this is a fit of total drag which includes the body drag plus the fricton drag 
 and base drag. It does not include the fin drag. Note that this drag also does not include 
@@ -15,11 +15,11 @@ The HyperCFD code is developed by John Cipolla and can be obtained from his webs
 http://www.aerorocket.com/hyperx.html. I have used his results essentially as a look up
 table.
     
-# FITTING THE DATA
+### Fitting Procedure
 
-The drag functions for various L/D (length of nosecone/ max diameter of nosecone) 
-and for various mach speeds were produced using HyperCFD code. Note that this is a 
-fit of total drag which includes the body drag plus the fricton drag and base drag. 
+The drag coefficient CD functions for various L/D (length of nosecone/ max diameter of 
+nosecone) and for various mach speeds were produced using HyperCFD code. Note that this 
+is a fit of total drag which includes the body drag plus the fricton drag and base drag. 
 It does not include the fin drag. Note that this drag also does not include 
 the drag due to various length bodies because it does not seem to be a large effect. 
 These curves can be divided into three segments from M=0 to M=1.05 [1], from M=1.05 
