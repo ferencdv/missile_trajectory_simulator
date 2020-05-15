@@ -3,8 +3,8 @@ NOTE: THIS IS VERY MUCH BETA! STILL REQUIRES MUCH TESTING
 
 This code is directly taken from Josh Levinger's Missile Trajectory simulator code. 
 Modifications are by me only and will be to improve its utility for our applications. 
-All credit should go to Josh Levinger of GlobalSecurity.org and Union of Concerned Scientists 
-nuclear expert Dr. Dave Wright on which this code is based. You can find Josh's webpage and 
+All credit should go to [Josh Levinger](https://www.levinger.net/josh/2005/09/01/ballistic-missile-simulation) formerly of GlobalSecurity.org and Union of Concerned Scientists 
+nuclear expert [Dr. Dave Wright](https://web.archive.org/web/20190511073113/http://www.ucsusa.org/about/staff/staff/david-wright.html) on which this code is based. You can find Josh's webpage and 
 code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page contains 
 all relevant information as to the licensing of this code.
 
