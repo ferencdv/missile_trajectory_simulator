@@ -1,4 +1,6 @@
 # MISSILE TRAJECTORY SIMULATOR
+NOTE: THIS IS VERY MUCH BETA! STILL REQUIRES MUCH TESTING
+
 This code is directly taken from Josh Levinger's Missile Trajectory simulator code. 
 Modifications are by me only and will be to improve its utility for our applications. 
 All credit should go to Josh Levinger of GlobalSecurity.org and Union of Concerned Scientists 
