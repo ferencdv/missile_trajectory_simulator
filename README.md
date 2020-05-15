@@ -29,7 +29,7 @@ from L/D=1 to L/D=3. The next segment [2] is a very steep fall off to M=1.2 and
 is also intepreted linearly from M=1.05 to M=1.2 (essentially a linear interpolation
 beteen these two points. 
 
-
+![HyperCFD CD as a function of Mach](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/Capture.JPG)
 
 These curves tend to have a very steep fall off from M=1 to 
 M=1.2 so it is not possible to have a good fit from M>1.05(ie [2] and [3]). The final
