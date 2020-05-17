@@ -11,7 +11,7 @@ all relevant information as to the licensing of this code.
 ## Inclusion of Drag
 *May 16*
 
-Major modification to code to include the drag casued by the fins. The calculation uses the formula from the book: Mandell, Gordon K., George J. Caporaso, and William P. Bengen. Topics in advanced model rocketry. MIT Press, 1973.
+Major modification to code to include the drag caused by the fins. The calculation uses the formula from the book: Mandell, Gordon K., George J. Caporaso, and William P. Bengen. Topics in advanced model rocketry. MIT Press, 1973.
 
 *May 14*
 
