@@ -9,6 +9,11 @@ code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page c
 all relevant information as to the licensing of this code.
 
 ## Inclusion of Drag
+
+*May 17*
+
+Made modifications in layout and size of frame and the way buttons are displayed. Files: gui-5171.py and sims5171.py.
+
 *May 16*
 
 Major modification to code to include the drag caused by the fins. The calculation uses the formula from the book: Mandell, Gordon K., George J. Caporaso, and William P. Bengen. Topics in advanced model rocketry. MIT Press, 1973.
