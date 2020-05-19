@@ -58,7 +58,7 @@ class ParamsPanel(wx.Panel):
         wx.Panel.__init__(self, parent, id)
         self.presets = presets #ext ref for loading presets
         self.SetBackgroundColour('THISTLE')
-
+ 
         vbox = wx.BoxSizer(wx.VERTICAL)
         #MAIN SIZER
         self.MainSizer = wx.FlexGridSizer(4,1,vgap=15,hgap=10)
@@ -80,10 +80,15 @@ class ParamsPanel(wx.Panel):
         PresetChoice = wx.Choice(self,-1,choices=preset_list)
         PresetChoice.SetSelection(0)
         self.Bind(wx.EVT_CHOICE, self.OnPresetChoice, PresetChoice)
-        self.MiddleSizer.Add(wx.StaticText(self,-1,'Preset'),0,wx.ALIGN_LEFT)
+        text = wx.StaticText(self,-1,'Select Known Missiles',(20,100))
+        font = wx.Font(12, wx.ROMAN, wx.NORMAL, wx.BOLD)
+        text.SetFont(font)
+        self.MiddleSizer.Add(text,0,wx.ALIGN_LEFT)
         self.MiddleSizer.Add(PresetChoice,0,wx.ALIGN_CENTER|wx.BOTTOM,border=5)
         self.MiddleSizer.Add(wx.StaticText(self,-1,'')) #blank
-        
+
+       
+
         #Number of Fins
         FinsNumberText = wx.StaticText(self,-1,"Number of Fins")
         self.FinsNumberControl = NumCtrl(self,-1,"Number of Fins")
@@ -1113,6 +1118,8 @@ class AppFrame(wx.Frame):
     def __init__(self, parent, id, title):
         # RESIZE THE APP FRAME HERE!
         wx.Frame.__init__(self, parent, id, title, (-1,-1), wx.Size(800,650)) # (width,length )
+        font = wx.Font(8, wx.FONTFAMILY_SWISS, wx.NORMAL, wx.BOLD)
+        wx.Frame.SetFont(self, font)
         
         # Now Create the menu bar and items
         self.MenuBar = wx.MenuBar()
