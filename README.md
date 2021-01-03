@@ -8,6 +8,19 @@ nuclear expert [Dr. Dave Wright](https://web.archive.org/web/20190511073113/http
 code at: https://github.com/jlev/ballistic-missile-range. Also his Readme page contains 
 all relevant information as to the licensing of this code.
 
+## Installation
+
+The code only works on Python 2.7 at this time and WX and Anaconda if this route is chosen must reflect that. 
+You only need to copy the files above. Here are the precise version numbers that have worked:
+Version of Anaconda: 4.5.11
+WX Python:  4.0.4  : "4.0.4-py27hc56fc5f_0    anaconda"
+Version of Python: 2.7.15
+
+## Running the code
+1) Start Anaconda Prompt [May have to install: conda install -c anaconda wxpython]
+2) One Windows go to C:\Users\username\AppData\Local\Continuum\anaconda2\pkgs\wxpython-4.0.4-py27hc56fc5f_0\Lib\site-packages\wx
+3) python gui-j2.py
+
 ## Inclusion of Drag
 
 *Jan 2 2021* 
