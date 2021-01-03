@@ -10,6 +10,10 @@ all relevant information as to the licensing of this code.
 
 ## Inclusion of Drag
 
+*Jan 2 2021
+After a lon hiatus.. Included fin drag which is taken from the DATCOM method. This is the United States Air Force Stability and Control (DATCOM being an acronym 
+for Data Compendium). The method is described in the hard to get book: Topics in Advanced Model Rocketry by (Thanks for Bruno Berger from the Swiss Propulsion Laboratory GmbH (LLC) for scanning the chapter on drag!). It confirms the techniques described in: Box, Simon, Christopher M. Bishop, and Hugh Hunt. "Estimating the dynamic and aerodynamic parameters of passively controlled high power rockets for flight simulation." Cambridge Rocketry (2009). Note that the Sweep Angle is not used in the code. Instread the area is independently calculated on the fin height, tip chord and the root chord. 
+
 *May 17*
 
 Made modifications in layout and size of frame and the way buttons are displayed. Files: gui-5171.py and sims5171.py.
