@@ -18,7 +18,7 @@ Version of Python: 2.7.15
 
 ## Running the code
 1) Start Anaconda Prompt [May have to install: conda install -c anaconda wxpython]
-2) One Windows go to C:\Users\username\AppData\Local\Continuum\anaconda2\pkgs\wxpython-4.0.4-py27hc56fc5f_0\Lib\site-packages\wx
+2) On Windows go to C:\Users\username\AppData\Local\Continuum\anaconda2\pkgs\wxpython-4.0.4-py27hc56fc5f_0\Lib\site-packages\wx
 3) python gui-j2.py
 
 ## Inclusion of Drag
