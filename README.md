@@ -12,6 +12,7 @@ all relevant information as to the licensing of this code.
 
 ### Install on new laptop
 *Jan 20 2022*
+
 conda create -n py27 python=2.7 anaconda
 conda activate py27
 conda install -c anaconda wxpython
