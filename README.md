@@ -14,9 +14,13 @@ all relevant information as to the licensing of this code.
 *Jan 20 2022*
 
 conda create -n py27 python=2.7 anaconda
+
 conda activate py27
+
 conda install -c anaconda wxpython
+
 Need to download all files (was some problem with plot)
+
 Go to that directory and run python gui-515.py
 
 Note that the code only works on Python 2.7 at this time and WX and Anaconda if this route is chosen must reflect that. 
