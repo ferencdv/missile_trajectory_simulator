@@ -13,11 +13,11 @@ all relevant information as to the licensing of this code.
 ### Install on new laptop
 *Jan 20 2022*
 
-conda create -n py27 python=2.7 anaconda
-conda activate py27
-conda install -c anaconda wxpython
-Need to download all files (was some problem with plot)
-Go to that directory and run python gui-515.py or gui-j2.py
+1) conda create -n py27 python=2.7 anaconda
+2) conda activate py27
+3) conda install -c anaconda wxpython
+4) Need to download all files (was some problem with plot)
+5) Go to that directory and run python gui-515.py or gui-j2.py
 
 Note that the code only works on Python 2.7 at this time and WX and Anaconda if this route is chosen must reflect that. 
 You only need to copy the files above. Here are the precise version numbers that have worked:
