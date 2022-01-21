@@ -32,6 +32,14 @@ Version of Python: 2.7.15
 
 ## Inclusion of Drag
 
+*Jan 21 2022*
+After another long hiatus! The code now works but if the missile is changed to another missile then it is better to reload the program. To turn off the fins just place zeroes for all the fin parameters. Happy missiling..
+
+![Console showing the missile presets](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/capture-simconsole.JPG)
+
+![Console showing the velocity vs time of an Iranian Qasad missile (no fins assumed)](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/capture-simresults.JPG)
+
+
 *Jan 2 2021* 
 
 After a long hiatus.. Included fin drag which is taken from the DATCOM method. This is the United States Air Force Stability and Control (DATCOM being an acronym 
