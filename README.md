@@ -37,7 +37,7 @@ After another long hiatus! The code now works but if the missile is changed to a
 
 ![Console showing the missile presets](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/capture-simconsole.jpg)
 
-![Console showing the velocity vs time of an Iranian Qasad missile (no fins assumed)](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/capture-simresults.JPG)
+![Console showing the velocity vs time of an Iranian Qasad missile (no fins assumed)](https://github.com/ferencdv/missile_trajectory_simulator/blob/master/capture-simsresults.JPG)
 
 
 *Jan 2 2021* 
