@@ -11,9 +11,12 @@ all relevant information as to the licensing of this code.
 ## Installation
 
 ### Install on new laptop
+
 *Feb 14 2022*
--Fixed a problem with the drag which was turned off after the first stage. That is now fixed.
--Added TD-3 in the presets which is used for testing. Strangely TD-1 and TD-2 alll work but I get an error for TD-3. Something is not internally consistent. I would like next to change the code to have burntime instead of thrust which can be confusing in units of kg f.
+
+1) Fixed a problem with the drag which was turned off after the first stage. CD seems OK but not drag because area was inappropriately set to zero for 'area_rv' That is now fixed.
+2) Added TD-3 in the presets which is used for testing. Strangely TD-1 and TD-2 alll work but I get an error for TD-3. Something is not internally consistent. I would like next to change the code to have burntime instead of thrust which can be confusing in units of kg f.
+3) Also, would like to next change the thrust imput and change to the burn time. Or at least check for internal consistency of the results. 
 
 *Jan 20 2022*
 
